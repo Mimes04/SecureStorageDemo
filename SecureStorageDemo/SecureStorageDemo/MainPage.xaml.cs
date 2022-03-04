@@ -9,6 +9,9 @@ using Xamarin.Forms;
 
 namespace SecureStorageDemo
 {
+    /// <summary>
+    /// Description: This is a code demo for Xamarin Essential: Secure Storage
+    /// </summary>
     public partial class MainPage : ContentPage
     {
         public string token;
