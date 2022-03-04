@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SecureStorageDemo.MainPage">
+
+    <StackLayout BackgroundColor="Wheat">
+        <StackLayout BackgroundColor="Gray"
+                     Margin="30">
+            <Label Text="Sign In"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Title"/>
+            <Entry x:Name="UsernameEntry"
+                   Keyboard="Text"
+                   HorizontalOptions="Center"
+                   FontSize="Large"
+                   Placeholder="Your Username"
+                   WidthRequest="500"/>
+            <Entry x:Name="PasswordEntry"
+                   Keyboard="Text"
+                   HorizontalOptions="Center"
+                   FontSize="Large"
+                   Placeholder="Your password"
+                   WidthRequest="500"/>
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center"
+                         >
+                <Button x:Name="SubmitBtn"
+                        Text="Log in"
+                        HorizontalOptions="Start"
+                        FontSize="Small"
+                        CornerRadius="30"
+                        WidthRequest="80"
+                        HeightRequest="50"
+                        Margin="0, 10, 0, 15"
+                        BackgroundColor="Green"
+                        Clicked="SubmitBtn_Clicked"/>
+                <Button x:Name="DeleteBtn"
+                        HorizontalOptions="Center"
+                        Text="Delete a Key"
+                        FontSize="Small"
+                        CornerRadius="30"
+                        WidthRequest="120"
+                        HeightRequest="75"
+                        Margin="10, 10, 10, 15"                        
+                        BackgroundColor="OrangeRed"
+                        Clicked="DeleteBtn_Clicked"/>
+                <Button x:Name="DeleteAllBtn"
+                        HorizontalOptions="End"
+                        Text="Delete all Keys"
+                        FontSize="Small"
+                        CornerRadius="30"
+                        WidthRequest="100"
+                        HeightRequest="70"
+                        Margin="0, 10, 0, 15"
+                        BackgroundColor="Red"
+                        Clicked="DeleteAllBtn_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
